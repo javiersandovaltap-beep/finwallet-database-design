@@ -1,0 +1,17 @@
+# Python
+__pycache__/
+*.py[cod]
+.env
+
+# Entornos virtuales
+venv/
+env/
+
+# IDEs
+.vscode/
+.idea/
+
+# MySQL dumps locales
+*.sql.bak
+
+.env

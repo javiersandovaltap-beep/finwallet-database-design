@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-AlkeWallet — Interfaz CLI Python
+FinWallet — Interfaz CLI Python
 Conexión a MySQL para gestión de monedero virtual.
 Requiere: pip install mysql-connector-python
 """
@@ -20,11 +20,10 @@ load_dotenv()
 
 DB_CONFIG = {
     'host':     os.getenv('DB_HOST', 'localhost'),
-    'database': os.getenv('DB_NAME', 'AlkeWallet'),
+    'database': os.getenv('DB_NAME', 'FinWallet'), 
     'user':     os.getenv('DB_USER', 'root'),
     'password': os.getenv('DB_PASSWORD', '')
 }
-
 
 # ================================================================
 # CONEXIÓN
@@ -56,7 +55,7 @@ def crear_conexion(password):
 def mostrar_menu():
     """Muestra el menú principal en consola."""
     print("\n" + "=" * 45)
-    print("        💳  ALKEWALLET — MENÚ PRINCIPAL")
+    print("  💳  FINWALLET — MENÚ PRINCIPAL")
     print("=" * 45)
     print("  1. Ver todos los usuarios")
     print("  2. Ver todas las transacciones")
@@ -372,7 +371,7 @@ def ver_reporte(conexion):
 def main():
     """Punto de entrada. Solicita credenciales y ejecuta el bucle principal."""
     print("\n" + "=" * 45)
-    print("   💳  ALKEWALLET — SISTEMA DE TRANSFERENCIAS")
+    print("   💳  FINWALLET — SISTEMA DE TRANSFERENCIAS") 
     print("=" * 45)
 
     conexion = crear_conexion(DB_CONFIG['password'])
@@ -381,7 +380,7 @@ def main():
         print("  No se pudo conectar. Verifica que MySQL esté activo y las credenciales sean correctas.")
         sys.exit(1)
 
-    print("  ✔ Conexión establecida con AlkeWallet\n")
+    print("  ✔ Conexión establecida con FinWallet\n")
 
     opciones = {
         1: lambda: ver_usuarios(conexion),

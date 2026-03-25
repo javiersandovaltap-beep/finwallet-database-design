@@ -1,4 +1,4 @@
-# 💳 AlkeWallet — Diseño de Base de Datos Relacional
+# 💳 FinWallet — Diseño de Base de Datos Relacional
 
 Diseño e implementación completa de una base de datos relacional para un sistema de **monedero virtual**, usando MySQL. El proyecto demuestra modelado de datos, integridad referencial, transaccionalidad ACID, vistas reutilizables e indexación.
 
@@ -6,7 +6,7 @@ Diseño e implementación completa de una base de datos relacional para un siste
 
 ## 🗂️ Diagrama Entidad–Relación
 
-![Diagrama ER AlkeWallet](./diagramas/alke_wallet_er_diagram.png)
+![Diagrama ER FinWallet](./diagramas/finwallet_er_diagram.png)
 
 **Cardinalidades:**
 - `usuario` → `moneda`: N:1 — muchos usuarios pueden usar la misma moneda

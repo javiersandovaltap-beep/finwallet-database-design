@@ -1,5 +1,5 @@
 -- ================================================================
--- ALKE WALLET — Script SQL Completo v2.0
+-- FINWALLET — Script SQL Completo v2.0
 -- Base de datos relacional para sistema de monedero virtual
 -- Motor: MySQL 8.0+
 -- Autor: Javier Sandoval Tapia
@@ -10,8 +10,8 @@
 -- PASO 1: CREAR Y SELECCIONAR LA BASE DE DATOS
 -- ================================================================
 
-CREATE DATABASE IF NOT EXISTS AlkeWallet;
-USE AlkeWallet;
+CREATE DATABASE IF NOT EXISTS FinWallet;
+USE FinWallet;
 
 
 -- ================================================================
